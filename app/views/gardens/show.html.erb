@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @garden %>
+
+<div class="my-5">
+  <%= render 'plants/form' %>
+</div>
+
+<div class="container">
+  <%= link_to "Edit this garden", edit_garden_path(@garden) %> |
+  <%= link_to "Back to gardens", gardens_path %> |
+  <%#= link_to "Add new Plant", new_garden_plant_path(@garden) %>
+
+  <%= button_to "Destroy this garden", @garden, method: :delete %>
+</div>
+
+

@@ -1,0 +1,15 @@
+
+<h1>Editing plant</h1>
+
+<%= simple_form_for @plant do |f| %>
+  <%= f.input :name %>
+  <%= f.input :image_url %>
+  <%= f.submit "Add Plant" %>
+<% end %>
+
+<br>
+
+<div>
+  <%= link_to "Show this garden", @garden %> |
+  <%= link_to "Back to gardens", gardens_path %>
+</div>
